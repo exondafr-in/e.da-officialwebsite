@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexstyle.css"/>
+    <title>e.da/human</title>
+</head>
+
+
+<body>
+    <header>
+
+                                          <div class="block-croix">
+                                            <div class="croix gauche"></div>
+                                            <div class="ligne"></div>
+                                            <div class="croix droite"></div>
+                                          </div>
+
+
+    <div class="block-ligne">
+      <div class="bandeau-container">
+        <img class="bandeaueda" src="LIENS/HEADRE/bandeau3.png" alt="bandeau">
+      </div>
+    </div>
+
+                                          <div class="block-croix">
+                                            <div class="croix gauche"></div>
+                                            <div></div>
+                                            <div class="croix droite"></div>
+                                          </div>
+
+    <div class="block-ligne">
+
+      
+        <div class="header-grid">
+            <div class="baseline dropdown p1">
+                <button class="dropdown-btn p1">e.da</button>
+                <div class="dropdown-content">
+                    <a class='offset3 text2' href="origins.html">Origins</a>
+                    <a class='offset1 text2' href="#">Credits</a>
+                    <a class='offset5 text2' href="#">C####s</a>
+                </div>
+
+            </div>
+        
+            <div class="baseline dropdown p1">
+                <button class="dropdown-btn p1">Artwork Archives</button>
+                <div class="dropdown-content">
+                    <a class='offset6 text2' href="index.html">(HOME)</a>
+                    <a class='offset2 text2' href="#">D##l#ga.ttf__(soon)</a>
+                    <a class='offset4 text2' href="deadinside.html">deadinside.</a>
+                </div>
+            </div>
+        
+            <div class="baseline dropdown p1">
+                <button class="dropdown-btn p1">Laboratory</button>
+                <div class="dropdown-content">
+                    <a class='offset3 text2' href="#">P#ot#l##__(soon)</a>
+                    <a class='offset1 text2' href="#">T#p##a#__(soon)</a>
+                </div>
+            </div>
+        
+            <div class="baseline dropdown p1">
+                <button class="dropdown-btn p1">Shop</button>
+                <div class="dropdown-content">
+                    <a class='offset2 text2' href="#">D##l#ga.ttf__(soon)</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+                                          <div class="block-croix">
+                                            <div class="croix gauche"></div>
+                                            <div></div>
+                                            <div class="croix droite"></div>
+                                          </div>
+
+</header>
+<!--FIN HEADER-->
+
+<div class="block-ligne fixed">  
+    <div class="page-wrapper container special-grid column">
+
+    <div class="container flexiblegrid">
+      <div class="column col1">
+             <a class='col1' href="index.html"><button class="arrow"></button></a>
+      </div>
+      <div class="column col1">
+             <p class="p2 offset2">_Back_Home</p>
+      </div>
+      </div>
+
+    <div class="column"><p class="p2 col1"></p></div><!--empty-->
+
+    <div class="column"><p class="p2 col1">Sept-Oct 2025</p></div>
+
+    <div class="column"><p class="p2 col1">Human</p></div>
+
+    </div>
+</div>
+
+                                          <div class="block-croix">
+                                            <div class="croix gauche"></div>
+                                            <div class="ligne"></div>
+                                            <div class="croix droite"></div>
+                                          </div>
+
+<section id="project">
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.querySelector(".slider-track");
+  const slides = Array.from(track.children);
+  const left = document.querySelector(".arrow.left");
+  const right = document.querySelector(".arrow.right");
+
+  const gap = 15;
+  const slideWidth = slides[0].offsetWidth + gap;
+
+  // 🔁 duplication pour effet infini
+  slides.forEach(slide => {
+    track.appendChild(slide.cloneNode(true));
+  });
+
+  let index = 0;
+  let position = 0;
+
+  function update() {
+    track.style.transition = "transform 0.5s ease";
+    track.style.transform = `translateX(${position}px)`;
+  }
+
+  function next() {
+    index++;
+    position -= slideWidth;
+    update();
+
+    if (index === slides.length) {
+      setTimeout(() => {
+        track.style.transition = "none";
+        index = 0;
+        position = 0;
+        track.style.transform = "translateX(0)";
+      }, 500);
+    }
+  }
+
+  function prev() {
+    if (index === 0) {
+      // saute à la fin sans animation
+      track.style.transition = "none";
+      index = slides.length;
+      position = -slideWidth * index;
+      track.style.transform = `translateX(${position}px)`;
+
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          index--;
+          position += slideWidth;
+          update();
+        });
+      });
+    } else {
+      index--;
+      position += slideWidth;
+      update();
+    }
+  }
+
+  right.addEventListener("click", next);
+  left.addEventListener("click", prev);
+});
+</script>
+
+<script src="sliderscript.js"></script> 
+<div class="slider">
+    <div class="slider-viewport"> 
+        <script src="arrowscript.js"></script> 
+        <div class="slider-track" id="sliderTrack">
+
+            <div class="slide-item2">
+                <a href="human.html"><img src="LIENS/HUMAN/VISUS/1.jpg"></a>
+            </div>
+
+            <div class="slide-item2">
+                <a href="human.html"><img src="LIENS/HUMAN/VISUS/3.jpg"></a>
+            </div>
+
+            <div class="slide-item2">
+                <a href="human.html"><img src="LIENS/HUMAN/VISUS/4.jpg"></a>
+            </div>
+
+            <div class="slide-item2">
+                <a href="human.html"><img src="LIENS/HUMAN/VISUS/2.jpg"></a>
+            </div>                  
+        </div>
+                            <button class="arrow left"></button>
+                            <button class="arrow right"></button>
+    </div>
+</div>
+
+                                          <div class="block-croix">
+                                            <div class="croix gauche"></div>
+                                            <div class="ligne"></div>
+                                            <div class="croix droite"></div>
+                                          </div>
+
+
+<div class="block-ligne fixed">  
+    <div class="page-wrapper container special-grid column">
+    
+        <div class="column"><p class="col1"><p class="p2">Human, (masc. name):</p>
+            <p class="text2">A human is a being who knows they exist and wonders why.__A human is a member of the species Homo sapiens, characterized by advanced cognition, language, and complex social structures.</p>          
+</p>
+</div>
+        <div class="column"><p class="text2 col1"></p></div>
+        <div class="column"><p class="text2 col1">Imagine existing through an envelope that is not yours? </p></div>
+
+        <div class="column"><p class="text2 col1">In this project, we project identity, outside the bodies, to make it exist without artifices, without superflow. </p></div>
+        
+    </div>
+</div>
+
+                                        
+                                          <div class="block-croix">
+                                            <div class="croix gauche"></div>
+                                            <div class="ligne"></div>
+                                            <div class="croix droite"></div>
+                                          </div>
+
+                                          
+
+<script src="sliderscript.js"></script> 
+<div class="slider">
+    <div class="slider-viewport"> 
+        <script src="arrowscript.js"></script> 
+        <div class="slider-track" id="sliderTrack">
+
+            <div class="slide-item portrait1">
+                <a href="human.html"><img src="LIENS/HUMAN/PORTRAITS/LUCAS-1-1.0.jpg"></a>
+                <div class="info">n°1 - Lucas — 2024</div>
+            </div>
+
+            <div class="slide-item portrait2">
+                <a href="human.html"><img src="LIENS/HUMAN/PORTRAITS/LEA-9-1.0.jpg"></a>
+                <div class="info">n°9 - Lea — 2024</div>
+            </div>
+
+            <div class="slide-item portrait3">
+                <a href="human.html"><img src="LIENS/HUMAN/PORTRAITS/TOM-2-1.0.jpg"></a>
+                <div class="info">n°2 - Tom — 2024</div>
+            </div>
+
+            <div class="slide-item portrait4">
+                <a href="human.html"><img src="LIENS/HUMAN/PORTRAITS/EMMA-8-1.0.jpg"></a>
+                <div class="info">n°8 - Emma — 2024</div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+                                          <div class="block-croix">
+                                            <div class="croix gauche"></div>
+                                            <div class="ligne"></div>
+                                            <div class="croix droite"></div>
+                                          </div>
+
+<div class="block-ligne fixed">  
+    <div class="page-wrapper container special-grid column">
+    
+        <div class="column"><p class="col1"><i class="text2 p2">«As early as the 19th century, Dilthey noticed that men had lost this living character, this Ruben, otherwise says this ability to live by themselves and that they had become men without history, sénateur, in the measure where their life was found to be dominated by the "mechanism". "the own of the «mechanism», which accompanies the technique is to explain all life, including psychic life, starting from isolated elements and not of the cohesion of the sense of lived experience. The empire of mechanism, serialization and classification is itself one of the first requirements of Gestell.</i>
+</div>
+        <div class="column"><p class="text2 col1"></p></div>
+        <div class="column"><p class="col1"><i class="text2 p2">(Die Frage nach der Technik)</i></p></div>
+
+        <div class="column"><p class="col1"><i class="text2 p2">Martin Heidegger</i></p></div>
+
+        
+    </div>
+</div>
+
+                                          <div class="block-croix">
+                                            <div class="croix gauche"></div>
+                                            <div class="ligne"></div>
+                                            <div class="croix droite"></div>
+                                          </div>
+
+        <script src="arrowscript.js"></script>
+        <div class=" block-ligne slider-track" id="sliderTrack">
+
+            <div class="slide-item portrait5">
+                <a href="human.html"><img src="LIENS/HUMAN/PORTRAITS/NOA-13-1.0.jpg"></a>
+                <div class="info">n°13 - Noa — 2024</div>
+            </div>
+
+            <div class="slide-item portrait6">
+                <a href="human.html"><img src="LIENS/HUMAN/PORTRAITS/JADE-11-1.0.jpg"></a>
+                <div class="info">n°11 - Jade — 2024</div>
+            </div>
+
+            <div class="slide-item portrait7">
+                <a href="human.html"><img src="LIENS/HUMAN/PORTRAITS/ULYSSE-4-1.0.jpg"></a>
+                <div class="info">n°4 - Ulysse — 2024</div>
+            </div>
+
+            <div class="slide-item portrait8">
+                <a href="human.html"><img src="LIENS/HUMAN/PORTRAITS/MARINE-12-1.0.jpg"></a>
+                <div class="info">n°12 - Marine — 2024</div>
+            </div>
+
+        </div>
+
+                                          <div class="block-croix">
+                                            <div class="croix gauche"></div>
+                                            <div class="ligne"></div>
+                                            <div class="croix droite"></div>
+                                          </div>
+        
+        <script src="arrowscript.js"></script>
+        <div class=" block-ligne slider-track" id="sliderTrack">
+
+            <div class="slide-item portrait9">
+                <a href="human.html"><img src="LIENS/HUMAN/PORTRAITS/VICTOR-3-1.0.jpg"></a>
+                <div class="info">n°3 - Victor — 2024</div>
+            </div>
+
+            <div class="slide-item portrait10">
+                <a href="human.html"><img src="LIENS/HUMAN/PORTRAITS/SOPHIE-6-1.0.jpg"></a>
+                <div class="info">n°6 - Sophie — 2024</div>
+            </div>
+
+            <div class="slide-item portrait11">
+                <a href="human.html"><img src="LIENS/HUMAN/PORTRAITS/NINA-7-1.0.jpg"></a>
+                <div class="info">n°7 - Nina — 2024</div>
+            </div>
+
+            <div class="slide-item portrait12">
+                <a href="human.html"><img src="LIENS/HUMAN/PORTRAITS/GABRIELLE-5-1.0.jpg"></a>
+                <div class="info">n°5 - Gabrielle — 2024</div>
+            </div>
+        </div>
+</div>   
+</section>
+
+        <div class="vidst1"></div>
+
+
+
+    </div>
+</div>
+
+                                          <div class="block-croix">
+                                            <div class="croix gauche"></div>
+                                            <div class="ligne"></div>
+                                            <div class="croix droite"></div>
+                                          </div>
+
+
+    <footer>
+
+    </footer>
+
+
+</body>
+</html>

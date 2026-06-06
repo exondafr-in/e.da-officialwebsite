@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexstyle.css"/>
+    <title>e.da/origins</title>
+</head>
+
+
+<body>
+    <header>
+
+                                          <div class="block-croix">
+                                            <div class="croix gauche"></div>
+                                            <div class="ligne"></div>
+                                            <div class="croix droite"></div>
+                                          </div>
+
+
+    <div class="block-ligne">
+      <div class="bandeau-container">
+        <img class="bandeaueda" src="LIENS/HEADRE/bandeau3.png" alt="bandeau">
+      </div>
+    </div>
+
+                                          <div class="block-croix">
+                                            <div class="croix gauche"></div>
+                                            <div></div>
+                                            <div class="croix droite"></div>
+                                          </div>
+
+    <div class="block-ligne">
+
+      
+        <div class="header-grid">
+            <div class="baseline dropdown p1">
+                <button class="dropdown-btn p1">e.da</button>
+                <div class="dropdown-content">
+                    <a class='offset3 text2' href="index.html">(HOME)</a>
+                    <a class='offset1 text2' href="#">Credits</a>
+                    <a class='offset5 text2' href="#">Contacts</a>
+                </div>
+
+            </div>
+        
+            <div class="baseline dropdown p1">
+                <button class="dropdown-btn p1">Artwork Archives</button>
+                <div class="dropdown-content">
+                    <a class='offset6 text2' href="human.html">Human</a>
+                    <a class='offset2 text2' href="#">D##l#ga.ttf__(soon)</a>
+                    <a class='offset4 text2' href="deadinside.html">deadinside.</a>
+                </div>
+            </div>
+        
+            <div class="baseline dropdown p1">
+                <button class="dropdown-btn p1">Laboratory</button>
+                <div class="dropdown-content">
+                    <a class='offset3 text2' href="#">P#ot#l##__(soon)</a>
+                    <a class='offset1 text2' href="#">T#p##a#__(soon)</a>
+                </div>
+            </div>
+        
+            <div class="baseline dropdown p1">
+                <button class="dropdown-btn p1">Shop</button>
+                <div class="dropdown-content">
+                    <a class='offset2 text2' href="#">D##l#ga.ttf__(soon)</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+                                          <div class="block-croix">
+                                            <div class="croix gauche"></div>
+                                            <div class=""></div>
+                                            <div class="croix droite"></div>
+                                          </div>
+
+</header>
+<!--FIN HEADER-->
+        <script>
+            const slider = document.getElementById("slider");
+            const track = slider.querySelector(".slider-track");
+
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            // Stop automatic animation on drag start
+            const stopAnimation = () => {
+              track.style.animation = "none";
+            };
+
+            slider.addEventListener("mousedown", (e) => {
+              isDown = true;
+              startX = e.pageX;
+              scrollLeft = slider.scrollLeft;
+              stopAnimation();
+            });
+
+            slider.addEventListener("mouseleave", () => {
+              isDown = false;
+            });
+
+            slider.addEventListener("mouseup", () => {
+              isDown = false;
+            });
+
+            // Drag mouvement
+            slider.addEventListener("mousemove", (e) => {
+              if (!isDown) return;
+              const x = e.pageX;
+              const walk = (x - startX) * 2;
+              slider.scrollLeft = scrollLeft - walk;
+            });
+
+        </script>
+
+<div class="block-ligne">  
+<div class="page-wrapper">
+    <div class="container special-grid">
+      <div class="container flexiblegrid">
+      <div class="column col1">
+             <a class='col1' href="index.html"><button class="arrow"></button></a>
+      </div>
+      <div class="column col1">
+             <p class="p2 offset2">_Back_Home</p>
+      </div>
+      </div>
+
+      <div class="column dropdown"></p>
+
+        <button class="dropdown-btn p2 col2">*Read*</button>
+        <div class="dropdown-content readgrid">
+
+            <p class='text2 readgriditem offset14'>"e.da" was born in 2024, with the intention of doing something that could give us the pretext to explore, beyond the current codes of graphic design. We just listen to what we would like to listen to, and talk about what we would like, to be pure, and real.</p>
+
+            <p class='text2 readgriditem' >The project is not only a graphic project, it's the project of a human trying to tell his story. There exists, and it is just a materialization of a spirit, something transversal, which can push to evolution.</p>
+
+            <div class="column col1"><p class='text2 D1 col1 offset16'>@*"Who #m I ?"*@</p></div>
+
+            <div class="column col1"><p class='text2 D1 col1 offset16' >My name is B##is#e, i was born in 2005, in France. Art is for me so solution to escape, and fight my troubles. It's vital to create, to talk throught, to expand this mind and to don't stay alone anymore.</p></div>
+
+            <p class='text2 readgriditem' >Im e.da</p>
+
+            <p class='text2 readgriditem offset16' >Nice to meet you.</p>
+
+            </div>
+        </div>
+        </div>
+
+ 
+
+
+        
+    </div>
+  </div>
+</div>
+
+                                          <div class="block-croix">
+                                            <div class="croix gauche"></div>
+                                            <div class="ligne"></div>
+                                            <div class="croix droite"></div>
+                                          </div>
+
+<div class="container grid-three">
+    <div class="column D3 adapt">
+        <image class="item ninetypercent" src="LIENS/ORIGINS/ID_.png"></image>
+    </div>
+</div>
+
+
+
+
+
+    
+
+  
+
+  </div>
+</div>
+
+                                          <div class="block-croix">
+                                            <div class="croix gauche"></div>
+                                            <div class="ligne"></div>
+                                            <div class="croix droite"></div>
+                                          </div>
+
+
+    <footer>
+
+    </footer>
+
+
+</body>
+</html>

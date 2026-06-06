@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>www.deadinside.com</title>
+   <link rel="stylesheet" href="indexstyle.css">
+    <link rel="stylesheet" href="deadinsidestyle.css">
+
+</head>
+
+<body>
+
+    <header>
+
+                                          <div class="block-croix">
+                                            <div class="croix gauche"></div>
+                                            <div class="ligne"></div>
+                                            <div class="croix droite"></div>
+                                          </div>
+
+
+    <div class="block-ligne">
+      <div class="bandeau-container">
+        <img class="bandeaueda" src="LIENS/HEADRE/bandeau3.png" alt="bandeau">
+      </div>
+    </div>
+
+                                          <div class="block-croix">
+                                            <div class="croix gauche"></div>
+                                            <div></div>
+                                            <div class="croix droite"></div>
+                                          </div>
+
+    <div class="block-ligne">
+
+      
+        <div class="header-grid">
+            <div class="baseline dropdown p1">
+                <button class="dropdown-btn p1">e.da</button>
+                <div class="dropdown-content">
+                    <a class='offset3 text2' href="origins.html">Origins</a>
+                    <a class='offset1 text2 barre' href="#">Credits</a>
+                    <a class='offset5 text2 barre' href="#">C####s</a>
+
+                </div>
+
+            </div>
+        
+            <div class="baseline dropdown p1">
+                <button class="dropdown-btn p1">Artwork Archives</button>
+                <div class="dropdown-content">
+                    <a class='offset6 text2' href="human.html">Human</a>
+                    <a class='offset2 text2' href="#">D##l#ga.ttf__(soon)</a>
+                    <a class='offset4 text2' href="deadinside.html">deadinside.</a>
+                </div>
+            </div>
+        
+            <div class="baseline dropdown p1">
+                <button class="dropdown-btn p1">Laboratory</button>
+                <div class="dropdown-content">
+                    <a class='offset3 text2' href="#">P#ot#l##__(soon)</a>
+                    <a class='offset1 text2' href="#">T#p##a#__(soon)</a>
+                </div>
+            </div>
+        
+            <div class="baseline dropdown p1">
+                <button class="dropdown-btn p1">Shop</button>
+                <div class="dropdown-content">
+                    <a class='offset2 text2' href="#">D##l#ga.ttf__(soon)</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+                                          <div class="block-croix">
+                                            <div class="croix gauche"></div>
+                                            <div></div>
+                                            <div class="croix droite"></div>
+                                          </div>
+
+        </header>
+<!--FIN HEADER-->
+
+<div class="block-ligne fixed">  
+    <div class="page-wrapper container special-grid column">
+
+    <div class="container flexiblegrid">
+      <div class="column col1">
+             <a class='col1' href="index.html"><button class="arrow"></button></a>
+      </div>
+      <div class="column col1">
+             <p class="p2 offset2">_Back_Home</p>
+      </div>
+      </div>
+
+    <div class="column"><p class="p2 col1"></p></div><!--empty-->
+
+    <div class="column"><p class="p2 col1">Sept-May 2026</p></div>
+
+    <div class="column"><p class="p2 col1">deadinside.</p></div>
+
+    </div>
+</div>
+
+                                          <div class="block-croix">
+                                            <div class="croix gauche"></div>
+                                            <div class="ligne"></div>
+                                            <div class="croix droite"></div>
+                                          </div>
+
+                                          <div class="block-ligne"><img src="LIENS/DEADINSIDE/IMAGES/ARROWS.jpg" alt="description" class="fit"></div>
+
+                                          <div class="block-croix">
+                                            <div class="croix gauche"></div>
+                                            <div class="ligne"></div>
+                                            <div class="croix droite"></div>
+                                          </div>
+
+
+
+  <div class="viewer">
+    <button class="arrow left" id="prev"></button>
+
+    <div class="image-container">
+      <img id="page" alt="page">
+    </div>
+
+    <button class="arrow right" id="next"></button>
+  </div>
+
+
+
+
+
+              <script>
+                const pages = [
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P3.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P4.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P5.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P6.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P7.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P8.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P9.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P10.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P11.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P12.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P13.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P14.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P15.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P16.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P17.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P18.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P19.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P20.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P21.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P22.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P23.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P24.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P25.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P26.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P27.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P28.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P29.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P30.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P31.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P32.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P33.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P34.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P35.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P36.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P37.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P38.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P39.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P40.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P41.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P42.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P43.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P44.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P45.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P46.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P47.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P48.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P49.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P50.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P51.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P52.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P53.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P54.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P55.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P56.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P57.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P58.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P59.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P60.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P61.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P62.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P63.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P64.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P65.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P66.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P67.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P68.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P69.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P70.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P71.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P72.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P73.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P74.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P75.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P76.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P77.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P78.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P79.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P80.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P81.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P82.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P83.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P84.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P85.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P86.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P87.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P88.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P89.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P90.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P91.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P92.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P93.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P94.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P95.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P96.jpg",
+                  "LIENS/DEADINSIDE/EDITO/PAGESJPG/P97.jpg",
+                ];
+              
+                let currentPage = 2;
+                const img = document.getElementById('page');
+              
+                function updatePage() {
+                if (!pages.length) return;
+                
+                img.src = "";
+                
+                const newImg = new Image();
+                newImg.onload = () => {
+                  img.src = newImg.src;
+                };
+              
+                  newImg.src = pages[currentPage];
+                }
+              
+                function handleNextPage() {
+                  if (currentPage < pages.length - 1) {
+                    currentPage++;
+                    updatePage();
+                  }
+                }
+              
+                function handlePrevPage() {
+                  if (currentPage > 0) {
+                    currentPage--;
+                    updatePage();
+                  }
+                }
+              
+                document.addEventListener("DOMContentLoaded", () => {
+                  const prevBtn = document.getElementById('prev');
+                  const nextBtn = document.getElementById('next');
+                  const toggleBtn = document.getElementById('toggleHeader');
+                  const headerDropdown = document.getElementById('headerDropdown');
+                
+                  if (!prevBtn || !nextBtn) return;
+                
+                  prevBtn.addEventListener('click', handlePrevPage);
+                  nextBtn.addEventListener('click', handleNextPage);
+                
+                  // Toggle header
+                  if (toggleBtn && headerDropdown) {
+                    toggleBtn.addEventListener('click', () => {
+                      headerDropdown.classList.toggle('collapsed');
+                    });
+                  }
+                
+                  // Navigation au clavier
+                  document.addEventListener('keydown', (e) => {
+                    if (e.key === 'ArrowLeft') handlePrevPage();
+                    if (e.key === 'ArrowRight') handleNextPage();
+                  });
+                
+                  updatePage();
+                });
+              </script>
+
+                                      <div class="block-croix">
+                                        <div class="croix gauche"></div>
+                                        <div class=""></div>
+                                        <div class="croix droite"></div>
+                                      </div>
+
+<a href="LIENS/DEADINSIDE/EDITO/PDF/deadinside.-freeforreadingpdf-e.da-www.deadinside.com.pdf" download class="download-btn">
+  Télécharger le PDF
+</a>
+
+
+
+                                        <div class="block-croix">
+                                          <div class="croix gauche"></div>
+                                          <div class=""></div>
+                                          <div class="croix droite"></div>
+                                        </div>
+
+            <div class="block-ligne fixed">  
+                <div class="page-wrapper container special-grid column">
+                
+                    <div class="column"><p class="col1"><i class="text2 p2">"All this is complex to understand, to imagine and I conceive that it can be a mental torture for the most adventurous who will pay all their attention to this work. The cage is complex and unique to each person, it is the key conceptual image of this rite of passage. The most important thing to conceive about the cage is that it is a lock that has always been closed, it is the inside, the false mental cut of an individual from his outside world, a mental barrier to confront and overcome."</i>
+            </div>
+                    <div class="column"><p class="text2 col1"></p></div>
+                    <div class="column"><p class="col1"><i class="text2 p2">chapter 2:4:the dive </i></p></div>
+
+                    <div class="column"><p class="col1"><i class="text2 p2">Page 40</i></p></div>
+
+
+                </div>
+            </div>
+
+            <div class="block-ligne fixed">  
+                <div class="page-wrapper container special-grid column">
+                
+                    <div class="column"><p class="col1"><i class="text2 p2">"Entering this space is like entering a room without a door from which it is difficult to leave, it is a room where one engages in dialogue with oneself, a room where one faces reality, one’s fears, one’s pains or one’s own hardships. It is a room in the prison, the one in which we are born. The cage is below our own mind, the lower layer where we might lose ourselves, the complex internal and invisible space of our crystal bodies. Get ready to start from the surface and dive slowly in order to hope to emerge through a hole no bigger than an atom of water."</i></div>
+                    <div class="column"><p class="text2 col1"></p></div>
+                    <div class="column"><p class="col1"></p></div>
+
+                    <div class="column"><p class="col1"></p></div>
+
+
+                </div>
+            </div>
+
+                                          <div class="block-croix">
+                                            <div class="croix gauche"></div>
+                                            <div class="ligne"></div>
+                                            <div class="croix droite"></div>
+                                          </div>
+
+<div class="block-ligne">
+  
+  <div class="video-block">
+    <video autoplay muted loop playsinline>
+      <source src="LIENS/DEADINSIDE/VIDEO/VIDEOFINAL.mp4" type="video/mp4">
+    </video>
+  </div>
+
+</div>
+
+                                          <div class="block-croix">
+                                            <div class="croix gauche"></div>
+                                            <div class="ligne"></div>
+                                            <div class="croix droite"></div>
+                                          </div>
+
+
+
+
+            <div class="block-ligne fixed">  
+                <div class="page-wrapper container special-grid column">
+                
+                    <div class="column"><p class="col1"><i class="text2 p2">«Do you believe that their eyes are as open as ours ? Don’t you think that the blind person is wise or that the wise person is blind for this reason? </i>
+            </div>
+                    <div class="column"><p class="text2 col1"></p></div>
+                    <div class="column"><p class="col1"><i class="text2 p2">chapter 4:2:their eyes=your dive.</i></p></div>
+
+                    <div class="column"><p class="col1"><i class="text2 p2">Page 79</i></p></div>
+
+
+                </div>
+            </div>
+
+
+
+</body>
+</html>
